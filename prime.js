@@ -1,17 +1,21 @@
 //find prime
-function find_prime(num){
-let count=0
-for(let i=0;i<num;i++){
-    if(num%i==0){
+
+function find_prime(number){
+count=0
+for(let i=0;i<=number;i++){
+    if(number%i==0){
+
      count++
 }
    }
 if(count==2){
-return true;
-}return false;
+
+return true
+}return false
+
 }
-let ans=find_prime(11);
-if (ans==true){
+let answer=find_prime(11);
+if (answer==true){
    console.log("Prime Number");
 }else{
     console.log("Not a Prime Number")
