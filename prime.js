@@ -1,8 +1,8 @@
 //find prime
-function find_prime(N){
+function find_prime(num){
 let count=0
-for(let i=0;i<N;i++){
-    if(N%i==0){
+for(let i=0;i<num;i++){
+    if(num%i==0){
      count++
 }
    }
@@ -10,5 +10,9 @@ if(count==2){
 return true;
 }return false;
 }
-find_prime(11);
-
+let ans=find_prime(11);
+if (ans==true){
+   console.log("Prime Number");
+}else{
+    console.log("Not a Prime Number")
+}
